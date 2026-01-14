@@ -14,11 +14,165 @@
 :root {
   --text-color: #222;
   --second-text-color: #666;
-  --btn-color: #c50685;
+  --main-color: #b60850;
   --white-color: #fff;
 }
 
 body {
   color: var(--text-color);
-  overflow-x: hidden;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+#menu-icon {
+  font-size: 4rem;
+  color: var(--text-color);
+  cursor: pointer;
+  display: none;
+}
+
+.logo {
+  font-size: 2.2rem;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.navbar {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar a {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin: 0 2rem;
+}
+
+.navbar i {
+  vertical-align: middle;
+  font-size: 2.2rem;
+  color: var(--text-color);
+}
+
+.bx-cart {
+  margin-left: 2rem;
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+section {
+  padding: 10rem 10% 3rem;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.home-content {
+  max-width: 60rem;
+}
+
+.home-content h1 {
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  line-height: 1.2;
+}
+
+.home-content p {
+  font-size: 1.6rem;
+  margin: 1rem 0 3.5rem;
+}
+
+.home-content .btn-box {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  border: .2rem solid var(--main-color);
+  background: var(--main-color);
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: var(--white-color);
+  box-shadow: 0 0 1rem var(--main-color);
+  transition: .5s;
+}
+
+.btn:hover {
+  background: transparent;
+  box-shadow: none;
+  color: var(--main-color);
+}
+
+.btn i{
+  vertical-align: middle;
+  font-size: 2rem;
+}
+
+.btn-box .sci {
+  margin-left: 2rem;
+}
+
+.btn-box .sci a {
+  display: inline-flex;
+  padding: 1rem;
+  border-radius: 50%;
+  border: .2rem solid var(--main-color);
+  color: var(--main-color);
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  transition: .5s;
+}
+
+.btn-box .sci a:hover {
+  background: var(--main-color);
+  box-shadow: 0 0 1rem var(--main-color);
+  color: var(--white-color);
+}
+
+.home-img .img-box {
+  width: 35vw;
+  height: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.home-img .img-box img {
+  display: block;
+  width: 85%;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
